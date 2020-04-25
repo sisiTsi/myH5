@@ -1,1 +1,29 @@
-我们从来课程
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li{font-size: 20px}
+    </style>
+</head>
+<body>
+<div>
+<ul>
+    <li id="fg">101</li>
+    <li>102</li>
+    <li>103</li>
+    <li>104</li>
+    <li>105</li>
+</ul></div>
+<script src="js/jQuery-3.5.0.js"></script>
+<script>
+    $(document.getElementById("fg")).mouseenter(function () {
+        $(this).css("font-size","30px")
+    })
+    $("#fg").mouseleave(function () {
+        $(this).css("font-size","20px")
+    })
+</script>
+</body>
+</html>
